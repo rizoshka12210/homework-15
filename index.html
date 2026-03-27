@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+   
+    <!-- TOP BAR -->
+    <navbar class="w-full border-b border-gray-200">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between h-[42px] text-[13px] px-3">
+
+        <div class="flex items-center gap-8 text-gray-600">
+          <a href="#" class="hover:text-gray-900">О компании</a>
+          <a href="#" class="hover:text-gray-900">Доставка и оплата</a>
+          <a href="#" class="hover:text-gray-900">Гарантии</a>
+          <a href="#" class="hover:text-gray-900">Контакты</a>
+        </div>
+
+        <div class="flex items-center gap-10 text-gray-600">
+          <div class="flex items-center gap-2">
+            <span class="text-[14px]">📞</span>
+            <span class="font-medium text-gray-800">+7 (965) 237-44-49</span>
+          </div>
+
+          <div class="flex items-center gap-1 cursor-pointer hover:text-gray-900">
+            <span>Русский</span>
+            <span class="text-[10px]">▼</span>
+          </div>
+
+          <a href="#" class="hover:text-gray-900">Личный кабинет</a>
+        </div>
+      </div>
+    </navbar>
+
+    <!-- HEADER -->
+    <header class="w-full border-b border-gray-200">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between py-5 px-3">
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-3">
+          <img src="./src/photoR/logo.png" alt="">
+        </div>
+
+        <!-- SEARCH -->
+        <div class="flex-1 px-10">
+          <div class="flex items-center w-full max-w-[640px] mx-auto">
+            <input
+              type="text"
+              placeholder="Введите поисковой запрос..."
+              class="w-full h-[44px] border border-green-600 rounded-l-md px-4 text-[14px] outline-none"
+            />
+            <button
+              class="h-[44px] px-7 bg-green-600 text-white font-semibold rounded-r-md flex items-center gap-2 text-[14px]"
+            >
+              <img src="./src/photoR/icon.png" alt="">
+              Найти
+            </button>
+          </div>
+        </div>
+
+        <!-- ICONS -->
+        <div class="flex items-center gap-10">
+
+          <!-- Favorites -->
+          <div class="relative flex flex-col items-center text-gray-700 cursor-pointer">
+            <div class="text-[22px]"><img src="./src/photoR/heart 1.png" alt=""></div>
+            <div class="text-[13px] mt-1">Избранное</div>
+            <div
+              class="absolute -top-1 right-2 w-[18px] h-[18px] bg-red-500 text-white text-[11px] flex items-center justify-center rounded-full font-bold"
+            >
+              4
+            </div>
+          </div>
+
+          <!-- Cart -->
+          <div class="relative flex flex-col items-center text-gray-700 cursor-pointer">
+            <div class="text-[22px]"><img src="./src/photoR/shopping-cart 1.png" alt=""></div>
+            <div class="text-[13px] mt-1">Моя корзина</div>
+            <div
+              class="absolute -top-1 right-0 w-[18px] h-[18px] bg-red-500 text-white text-[11px] flex items-center justify-center rounded-full font-bold"
+            >
+              10
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MENU -->
+    <section class="w-full">
+      <div class="max-w-[1200px] mx-auto flex items-center justify-between px-3 py-4 text-[14px]">
+
+        <div class="flex items-center gap-10 text-gray-700">
+          <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+            Apple <span class="text-[10px]">▼</span>
+          </div>
+          <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+            Huawei <span class="text-[10px]">▼</span>
+          </div>
+          <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+            Xiaomi <span class="text-[10px]">▼</span>
+          </div>
+          <div class="flex items-center gap-1 cursor-pointer hover:text-black">
+            Samsung <span class="text-[10px]">▼</span>
+          </div>
+
+          <a href="#" class="hover:text-black">Питание и кабели</a>
+          <a href="#" class="hover:text-black">Powerbank</a>
+          <a href="#" class="hover:text-black">Акции</a>
+        </div>
+
+        <a href="#" class="text-green-600 font-semibold hover:text-green-700">
+          Прайс-лист
+        </a>
+      </div>
+    </section>
+
+    <!-- MAIN BANNERS -->
+    <section class="max-w-[1200px] mx-auto px-3 mt-6 pb-10">
+      <div class="grid grid-cols-12 gap-6">
+
+        <!-- BIG LEFT SLIDER -->
+        <div style="background-image: url(./src/photoR/phone.png); background-position: right; background-repeat: no-repeat; " class="col-span-7 bg-green-600 rounded-md relative overflow-hidden h-[360px] flex items-center">
+
+          <!-- Text -->
+          <div class="pl-12 z-10">
+            <h2 class="text-white text-[42px] font-bold leading-[48px] max-w-[420px]">
+              Защитное стекло на iPhone 11 Pro<br />
+              по лучшей цене!
+            </h2>
+
+            <button
+              class="mt-10 bg-white text-green-700 font-semibold px-10 py-3 rounded-md shadow-sm text-[14px]"
+            >
+              Подробнее
+            </button>
+          </div>
+
+          <div class="absolute bottom-5 left-10 flex items-center gap-3">
+            <div class="w-6 h-[4px] bg-white rounded-full"></div>
+            <div class="w-6 h-[4px] bg-white/40 rounded-full"></div>
+            <div class="w-6 h-[4px] bg-white/40 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="col-span-5 flex flex-col gap-6">
+
+          <!-- Top Right Banner -->
+          <div class="bg-white border border-gray-200 rounded-md h-[170px] flex items-center justify-between px-8 overflow-hidden relative z-10">
+            <div>
+              <div class="text-[34px] font-bold leading-[38px] text-gray-800">
+                Silicone Case<br />для iPhone Xr
+              </div>
+              <a href="#" class="inline-flex items-center gap-2 text-green-600 font-semibold mt-5 text-[14px]">
+                Подробнее <span class="text-[16px]">→</span>
+              </a>
+            </div>
+
+            <div style="background-image: url(./src/photoR/64507_3\ 1.png); background-position: right; background-repeat: no-repeat;" class="absolute inset-0 z-0"></div>
+          </div>
+
+          <!-- Bottom Right Banner -->
+          <div class="bg-white border border-gray-200 rounded-md h-[170px] flex items-center justify-between px-8 overflow-hidden relative">
+            <div>
+              <div class="text-[34px] font-bold leading-[38px] text-gray-800">
+                PowerBank от Xiaomi<br />на 10 800 мА·ч
+              </div>
+              <a href="#" class="inline-flex items-center gap-2 text-green-600 font-semibold mt-5 text-[14px]">
+                Подробнее <span class="text-[16px]">→</span>
+              </a>
+            </div>
+            
+            <div style="background-image: url(./src/photoR/img.png); position: absolute; background-position: right; background-repeat: no-repeat;" class="absolute inset-0 "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</body>
+</html>
